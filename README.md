@@ -116,3 +116,16 @@ output_file = 'data/cleaned_data.csv'
 
 data_cleanser = DataCleanser(input_file, output_file)
 data_cleanser.clean_data()
+
+ADDITION visualiser
+
+from analysis.data_visualizer import DataVisualizer
+
+input_file = 'data/cleaned_data.csv'
+
+data_visualizer = DataVisualizer(input_file)
+data_visualizer.visualize_data()
+
+FOR MAIN
+
+from analysis import DataCleanser, DataVisualiser
